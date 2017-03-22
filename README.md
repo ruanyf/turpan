@@ -28,6 +28,7 @@ Then require it in your script.
 ```javascript
 var md = require('turpan');
 console.log(md.render('# Hello world'));
+// <h1 id="hello-world">Hello world <a class="markdownIt-Anchor" href="#hello-world">#</a></h1>
 ```
 
 ## License
