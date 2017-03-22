@@ -12,6 +12,11 @@
   "keywords": [
     "markdown"
   ],
+  "homepage": "https://github.com/ruanyf/turpan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruanyf/turpan.git"
+  },
   "author": "Ruan Yifeng",
   "license": "MIT",
   "dependencies": {
