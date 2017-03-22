@@ -1,7 +1,7 @@
 {
   "name": "turpan",
   "version": "0.1.0",
-  "description": "a markdown render supported by Markdown-it",
+  "description": "a wrapped markdown render based on Markdown-it",
   "main": "./lib/index.js",
   "bin": {
     "turpan": "./bin/turpan.js"
@@ -12,7 +12,7 @@
   "keywords": [
     "markdown"
   ],
-  "author": "",
+  "author": "Ruan Yifeng",
   "license": "MIT",
   "dependencies": {
     "clone": "^2.1.1",
