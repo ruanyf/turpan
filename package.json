@@ -1,6 +1,6 @@
 {
   "name": "turpan",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a markdown render supported by Markdown-it",
   "main": "./lib/index.js",
   "bin": {
