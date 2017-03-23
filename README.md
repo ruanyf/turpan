@@ -8,6 +8,7 @@ Turpan is a wrapped markdown renderer based on [markdown-it](https://github.com/
 - [markdown-it-implicit-figures](https://github.com/arve0/markdown-it-implicit-figures)
 - [markdown-it-imsize](https://github.com/tatsy/markdown-it-imsize)
 - [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins)
+- [markdown-it-katex](https://github.com/waylonflinn/markdown-it-katex)
 - [markdown-it-link-attributes](https://github.com/crookedneighbor/markdown-it-link-attributes)
 - [markdown-it-mark](https://github.com/markdown-it/markdown-it-mark)
 - [markdown-it-sub](https://github.com/markdown-it/markdown-it-sub)

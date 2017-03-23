@@ -4,7 +4,7 @@ var test = require('tape');
 var md = require('../lib');
 
 test('markdown test', function (t) {
-  t.plan(13);
+  t.plan(14);
 
   t.equal(
     md.render('`x = 2`'),
@@ -69,5 +69,10 @@ test('markdown test', function (t) {
   t.equal(
     md.render('[TOC]\n## title1\n### 标题2\n#### title3\n## title4'),
     '<p><div id="toc" class="toc"><ul class="markdownIt-TOC">\n<li><a href="#title1">title1</a>\n<ul>\n<li><a href="#%E6%A0%87%E9%A2%982">标题2</a></li>\n</ul>\n</li>\n<li><a href="#title4">title4</a></li>\n</ul>\n</div></p>\n<h2 id="title1">title1 <a class="markdownIt-Anchor" href="#title1">#</a></h2>\n<h3 id="标题2">标题2 <a class="markdownIt-Anchor" href="#标题2">#</a></h3>\n<h4 id="title3">title3 <a class="markdownIt-Anchor" href="#title3">#</a></h4>\n<h2 id="title4">title4 <a class="markdownIt-Anchor" href="#title4">#</a></h2>\n'
+  );
+
+  t.equal(
+    md.render('$\sqrt{3x-1}+(1+x)^2$'),
+    '<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>q</mi><mi>r</mi><mi>t</mi><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo>+</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo>)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">sqrt{3x-1}+(1+x)^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">s</span><span class="mord mathit" style="margin-right:0.03588em;">q</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">t</span><span class="mord textstyle uncramped"><span class="mord mathrm">3</span><span class="mord mathit">x</span><span class="mbin">−</span><span class="mord mathrm">1</span></span><span class="mbin">+</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">+</span><span class="mord mathit">x</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></p>\n'
   );
 });
