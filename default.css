@@ -144,5 +144,5 @@ https://raw.githubusercontent.com/isagalaev/highlight.js/master/src/styles/monok
 }
 
 /* ketex style */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css');
 

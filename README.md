@@ -4,6 +4,7 @@ Turpan is a wrapped markdown renderer based on [markdown-it](https://github.com/
 - [markdown-it-container](https://github.com/markdown-it/markdown-it-container)
 - [markdown-it-deflist](https://github.com/markdown-it/markdown-it-deflist)
 - [markdown-it-emoji](https://github.com/markdown-it/markdown-it-emoji)
+- [markdown-it-emphasis-alt](https://github.com/jay-hodgson/markdown-it-emphasis-alt)
 - [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote)
 - [markdown-it-implicit-figures](https://github.com/arve0/markdown-it-implicit-figures)
 - [markdown-it-imsize](https://github.com/tatsy/markdown-it-imsize)
