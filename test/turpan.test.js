@@ -4,7 +4,7 @@ var test = require('tape');
 var md = require('../lib');
 
 test('markdown test', function (t) {
-  t.plan(15);
+  t.plan(18);
 
   t.equal(
     md.render('`x = 2`'),
@@ -79,5 +79,20 @@ test('markdown test', function (t) {
   t.equal(
     md.render('a** b **c'),
     '<p>a<strong> b </strong>c</p>\n'
+  );
+
+  t.equal(
+    md.render('@[youtube](lJIrF4YjHfQ)'),
+    '<div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>\n'
+  );
+
+  t.equal(
+    md.render('@[youtube](https://nodejs.org/api/url.html)'),
+    '<div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/https://nodejs.org/api/url.html" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>\n'
+  );
+
+  t.equal(
+    md.render('@[pdf](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)'),
+    '<div class="block-embed block-embed-service-pdf"><iframe type="text/html" src="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf" frameborder="0" width="640" height="390"></iframe></div>\n'
   );
 });

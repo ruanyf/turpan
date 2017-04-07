@@ -1,6 +1,7 @@
-Turpan is a wrapped markdown renderer based on [markdown-it](https://github.com/markdown-it/markdown-it) and a lot of plugins.
+Turpan is a wrapped markdown renderer based on [markdown-it](https://github.com/markdown-it/markdown-it) and a lot of its plugins.
 
 - [markdown-it-abbr](https://github.com/markdown-it/markdown-it-abbr)
+- [markdown-it-block-embed](https://github.com/rotorz/markdown-it-block-embed)
 - [markdown-it-container](https://github.com/markdown-it/markdown-it-container)
 - [markdown-it-deflist](https://github.com/markdown-it/markdown-it-deflist)
 - [markdown-it-emoji](https://github.com/markdown-it/markdown-it-emoji)
