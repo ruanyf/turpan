@@ -4,7 +4,7 @@ var test = require('tape');
 var md = require('../lib');
 
 test('markdown test', function (t) {
-  t.plan(18);
+  t.plan(19);
 
   t.equal(
     md.render('`x = 2`'),
@@ -94,5 +94,10 @@ test('markdown test', function (t) {
   t.equal(
     md.render('@[pdf](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)'),
     '<div class="block-embed block-embed-service-pdf"><iframe type="text/html" src="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf" frameborder="0" width="640" height="390"></iframe></div>\n'
+  );
+
+  t.equal(
+    md.render('```mermaid\ngraph TD;\nA-->B;\nA-->C;\nB-->D;\nC-->D;\n```'),
+    '<div class="mermaid" data-source="graph%20TD%3B%0AA--%3EB%3B%0AA--%3EC%3B%0AB--%3ED%3B%0AC--%3ED%3B%0A"></div>\n'
   );
 });
