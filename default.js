@@ -66,7 +66,6 @@ function embedMermaid() {
       (onNextFrame(() => {
         window.mermaid.init(undefined, f);
         if (!('eventAttached' in f.dataset)) {
-          f.addEventListener('click', renderZoomed.bind(null, f));
           f.dataset['eventAttached'] = true;
         }
         f.style.color = 'inherit';
