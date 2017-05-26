@@ -78,7 +78,7 @@ function embedMermaid() {
   } else {
     addStyle('https://cdn.rawgit.com/knsv/mermaid/7.0.0/dist/mermaid.css');
     addScript(
-      'https://cdn.rawgit.com/knsv/mermaid/#version#/dist/mermaid.min.js',
+      'https://cdn.rawgit.com/knsv/mermaid/7.0.0/dist/mermaid.min.js',
       mermaidHandler
     );
   }
