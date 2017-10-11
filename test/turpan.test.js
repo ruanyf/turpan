@@ -4,11 +4,16 @@ var test = require('tape');
 var md = require('../lib');
 
 test('markdown test', function (t) {
-  t.plan(19);
+  t.plan(20);
 
   t.equal(
     md.render('`x = 2`'),
     '<p><code>x = 2</code></p>\n'
+  );
+
+  t.equal(
+    md.render('user: __________'),
+    '<p>user: __________</p>\n'
   );
 
   t.equal(
