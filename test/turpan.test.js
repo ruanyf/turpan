@@ -4,7 +4,7 @@ var test = require('tape');
 var md = require('../lib');
 
 test('markdown test', function (t) {
-  t.plan(20);
+  t.plan(21);
 
   t.equal(
     md.render('`x = 2`'),
@@ -22,8 +22,13 @@ test('markdown test', function (t) {
   );
 
   t.equal(
-    md.render('www.yahoo.com'),
-    '<p><a href="http://www.yahoo.com" target="_blank" rel="noopener">www.yahoo.com</a></p>\n'
+    md.render('http://www.yahoo.com'),
+    '<p><a href="http://www.yahoo.com" target="_blank" rel="noopener">http://www.yahoo.com</a></p>\n'
+  );
+
+  t.equal(
+    md.render('a.md'),
+    '<p>a.md</p>\n'
   );
 
   t.equal(
