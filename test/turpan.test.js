@@ -38,12 +38,12 @@ test('markdown test', function (t) {
 
   t.equal(
     md.render('![test](image.png =100x200)'),
-    '<figure><img src="image.png" alt="test" width="100" height="200"><figcaption>test</figcaption></figure>\n'
+    '<figure><img src="image.png" alt="" width="100" height="200"><figcaption>test</figcaption></figure>\n'
   );
 
   t.equal(
     md.render('![test](image.png "title")'),
-    '<figure><img src="image.png" alt="test" title="title"><figcaption>test</figcaption></figure>\n'
+    '<figure><img src="image.png" alt="" title="title"><figcaption>test</figcaption></figure>\n'
   );
 
   t.equal(
@@ -58,7 +58,7 @@ test('markdown test', function (t) {
 
   t.equal(
     md.render('- [ ] Mercury\n- [x] Venus'),
-    '<ul class="task-list">\n<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Mercury</li>\n<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Venus</li>\n</ul>\n'
+    '<ul class="contains-task-list">\n<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Mercury</li>\n<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Venus</li>\n</ul>\n'
   );
 
   t.equal(
