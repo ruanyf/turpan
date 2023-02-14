@@ -20,24 +20,25 @@
   "author": "Ruan Yifeng",
   "license": "MIT",
   "dependencies": {
+    "@iktakahiro/markdown-it-katex": "^4.0.1",
     "clone": "^2.1.1",
-    "github-slugger": "^1.1.1",
-    "highlight.js": "^10.4.1",
-    "markdown-it": "^12.0.1",
+    "github-slugger": "1.x",
+    "highlight.js": "11.x",
+    "markdown-it": "13.x",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-container": "^3.0.0",
     "markdown-it-deflist": "^2.0.1",
     "markdown-it-emoji": "^2.0.0",
     "markdown-it-footnote": "^3.0.1",
-    "markdown-it-implicit-figures": "^0.10.0",
+    "markdown-it-image-lazy-loading": "^1.2.0",
+    "markdown-it-implicit-figures": "^0.11.0",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-ins": "^3.0.0",
-    "@iktakahiro/markdown-it-katex": "^4.0.1",
     "markdown-it-mark": "^3.0.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "markdown-it-task-lists": "^2.1.1",
-    "yargs": "^16.1.1"
+    "yargs": "17.x"
   },
   "devDependencies": {
     "tape": "^5.0.1"

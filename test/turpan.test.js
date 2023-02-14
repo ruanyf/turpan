@@ -33,17 +33,17 @@ test('markdown test', function (t) {
 
   t.equal(
     md.render('test ![](image.png)'),
-    '<p>test <img src="image.png" alt=""></p>\n'
+    '<p>test <img src="image.png" alt="" loading="lazy"></p>\n'
   );
 
   t.equal(
     md.render('![test](image.png =100x200)'),
-    '<figure><img src="image.png" alt="" width="100" height="200"><figcaption>test</figcaption></figure>\n'
+    '<figure><img src="image.png" alt="" width="100" height="200" loading="lazy"><figcaption>test</figcaption></figure>\n'
   );
 
   t.equal(
     md.render('![test](image.png "title")'),
-    '<figure><img src="image.png" alt="" title="title"><figcaption>test</figcaption></figure>\n'
+    '<figure><img src="image.png" alt="" title="title" loading="lazy"><figcaption>test</figcaption></figure>\n'
   );
 
   t.equal(
@@ -73,7 +73,7 @@ test('markdown test', function (t) {
 
   t.equal(
     md.render('# 中文标题，你好 世界'),
-    '<h1 id="中文标题，你好-世界">中文标题，你好 世界 <a class="markdownIt-Anchor" href="#中文标题，你好-世界">#</a></h1>\n'
+    '<h1 id="中文标题你好-世界">中文标题，你好 世界 <a class="markdownIt-Anchor" href="#中文标题你好-世界">#</a></h1>\n'
   );
 
   t.equal(
