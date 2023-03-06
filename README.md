@@ -17,6 +17,7 @@ Turpan is a wrapped markdown renderer based on [markdown-it](https://github.com/
 - [markdown-it-sup](https://github.com/markdown-it/markdown-it-sup)
 - [markdown-it-task-lists](https://github.com/revin/markdown-it-task-lists)
 - [markdown-it-toc-and-anchor](https://github.com/medfreeman/markdown-it-toc-and-anchor)
+- [markdown-it-image-lazy-loading](https://github.com/ruanyf/markdown-it-image-lazy-loading)
 
 ## How to use
 
