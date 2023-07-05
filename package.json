@@ -38,9 +38,9 @@
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "markdown-it-task-lists": "^2.1.1",
-    "yargs": "^17.7.1"
+    "yargs": "17.x"
   },
   "devDependencies": {
-    "tape": "^5.0.1"
+    "tape": "5.x"
   }
 }
