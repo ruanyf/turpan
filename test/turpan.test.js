@@ -4,7 +4,7 @@ var test = require('tape');
 var md = require('../lib');
 
 test('markdown test', function (t) {
-  t.plan(21);
+  t.plan(22);
 
   t.equal(
     md.render('`x = 2`'),
@@ -19,6 +19,11 @@ test('markdown test', function (t) {
   t.equal(
     md.render('```javascript\nx = 2\n```'),
     '<pre class="hljs"><code>x = <span class="hljs-number">2</span>\n</code></pre>\n'
+  );
+
+  t.equal(
+    md.render('```\nif (x > 2) {\n  console.log(x);\n}\n```'),
+    '<pre class="hljs"><code>if (x &gt; 2) {\n  console.log(x);\n}\n</code></pre>\n'
   );
 
   t.equal(
