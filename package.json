@@ -30,7 +30,7 @@
     "markdown-it-deflist": "3.x",
     "markdown-it-emoji": "3.x",
     "markdown-it-footnote": "4.x",
-    "markdown-it-image-lazy-loading": "^1.2.0",
+    "markdown-it-image-lazy-loading": "2.x",
     "markdown-it-implicit-figures": "^0.12.0",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-ins": "4.x",
