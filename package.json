@@ -20,7 +20,7 @@
   "author": "Ruan Yifeng",
   "license": "MIT",
   "dependencies": {
-    "@iktakahiro/markdown-it-katex": "^4.0.1",
+    "@ruanyf/markdown-it-katex": "^5.0.0",
     "clone": "^2.1.1",
     "github-slugger": "1.x",
     "highlight.js": "11.x",
